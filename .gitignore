@@ -37,3 +37,7 @@ build/
 ### Others ###
 *.log
 *.class
+
+### H2 Database ###
+*.mv.db
+*.trace.db

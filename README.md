@@ -21,6 +21,13 @@ product-catalog-service/
 │   │   ├── service/ProductService.java
 │   │   └── model/Product.java
 │   └── README.md
+├── assignment-5-jpa/            # Persistence with JPA & H2
+│   ├── pom.xml
+│   ├── src/main/java/com/example/
+│   │   ├── repository/ProductRepository.java
+│   │   ├── service/ProductService.java
+│   │   └── model/Product.java
+│   └── README.md
 └── README.md                    # This file
 ```
 
@@ -64,6 +71,18 @@ product-catalog-service/
 
 **Technologies**: Spring Boot 3.2.0, Spring Web, Embedded Tomcat
 
+### 📚 Assignment 5: Persistence with Spring Data JPA
+**Goal**: Integrate database persistence using Spring Data JPA and H2
+
+**Key Concepts Learned**:
+- JPA Entity mapping (`@Entity`, `@Id`, `@GeneratedValue`)
+- Repository pattern with `JpaRepository`
+- Embedded database configuration (H2)
+- Database schema auto-generation and H2 Console
+- Moving from in-memory lists to persistent storage
+
+**Technologies**: Spring Data JPA, H2 Database, Hibernate
+
 ## Quick Start Guide
 
 ### Assignment 1-2: Basic Java
@@ -73,9 +92,15 @@ mvn compile
 mvn exec:java -Dexec.mainClass="com.example.Main"
 ```
 
-### Assignment 3: Spring Boot
+### Assignment 3 & 4: Spring Boot
 ```bash
 cd product-catalog-service
+mvn spring-boot:run
+```
+
+### Assignment 5: JPA Persistence
+```bash
+cd assignment-5-jpa
 mvn spring-boot:run
 ```
 
