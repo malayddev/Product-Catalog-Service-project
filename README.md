@@ -13,7 +13,7 @@ product-catalog-service/
 │   │   ├── model/Product.java
 │   │   └── service/ProductService.java
 │   └── README.md
-├── assignment-3-spring-boot/    # Spring Boot REST API
+├── product-catalog-service/     # Spring Boot REST API
 │   ├── pom.xml
 │   ├── src/main/java/com/example/
 │   │   ├── ProductCatalogApplication.java
@@ -59,6 +59,8 @@ product-catalog-service/
 - Service layer with `@Service` annotation
 - HTTP endpoint mapping with `@GetMapping`
 - JSON serialization/deserialization
+- Data Transfer Objects (DTOs) and Jakarta Validation (`@Valid`)
+- Global Exception Handling with `@RestControllerAdvice`
 
 **Technologies**: Spring Boot 3.2.0, Spring Web, Embedded Tomcat
 
@@ -73,7 +75,7 @@ mvn exec:java -Dexec.mainClass="com.example.Main"
 
 ### Assignment 3: Spring Boot
 ```bash
-cd assignment-3-spring-boot
+cd product-catalog-service
 mvn spring-boot:run
 ```
 

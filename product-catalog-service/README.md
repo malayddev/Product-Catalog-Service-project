@@ -1,11 +1,11 @@
-# Assignment 3: Spring Boot with Dependency Injection
+# Spring Boot REST API (Assignments 3 & 4)
 
-A Spring Boot REST API application demonstrating dependency injection, annotations, and web endpoints.
+A Spring Boot REST API application demonstrating dependency injection, validations, exceptional handling, and web endpoints.
 
 ## Project Structure
 
 ```
-assignment-3-spring-boot/
+product-catalog-service/
 ├── pom.xml
 ├── src/
 │   └── main/
@@ -33,31 +33,34 @@ assignment-3-spring-boot/
 - ✅ Injected ProductService using constructor injection
 - ✅ Added `@GetMapping("/products")` endpoint
 - ✅ Returns sample list of products
+- ✅ Added `@PostMapping("/products")` with `@Valid` DTO validation
+- ✅ Added Global Exception Handler for `404 Not Found` and `400 Bad Request`
 
 ### Key Spring Boot Features Demonstrated:
 - **Dependency Injection**: Constructor injection in ProductController
 - **Annotations**: `@SpringBootApplication`, `@RestController`, `@Service`, `@GetMapping`
 - **Auto-configuration**: Spring Boot automatically configures web server
 - **Component Scanning**: Spring automatically finds and manages beans
+- **Global Error Handling**: Returning structured `ErrorResponse` payload globally.
 
 ## How to Run
 
 ### Method 1: Using Maven (Recommended)
 ```bash
-cd assignment-3-spring-boot
+cd product-catalog-service
 mvn spring-boot:run
 ```
 
 ### Method 2: Compile and Run
 ```bash
-cd assignment-3-spring-boot
+cd product-catalog-service
 mvn compile
 mvn spring-boot:run
 ```
 
 ### Method 3: Package and Run JAR
 ```bash
-cd assignment-3-spring-boot
+cd product-catalog-service
 mvn package
 java -jar target/product-catalog-spring-1.0.0.jar
 ```
