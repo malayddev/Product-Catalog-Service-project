@@ -1,7 +1,6 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Build artifacts
+**/target/
+build/
 
 ### STS ###
 .apt_generated
@@ -39,5 +38,5 @@ build/
 *.class
 
 ### H2 Database ###
-*.mv.db
-*.trace.db
+**/*.mv.db
+**/*.trace.db

@@ -1,36 +1,5 @@
 # Product Catalog Service - Complete Java Learning Journey
 
-A comprehensive Java learning project demonstrating progression from basic domain modeling to Spring Boot web applications.
-
-## Repository Structure
-
-```
-product-catalog-service/
-├── assignment-1-2/              # Basic Java & Collections
-│   ├── pom.xml
-│   ├── src/main/java/com/example/
-│   │   ├── Main.java
-│   │   ├── model/Product.java
-│   │   └── service/ProductService.java
-│   └── README.md
-├── product-catalog-service/     # Spring Boot REST API
-│   ├── pom.xml
-│   ├── src/main/java/com/example/
-│   │   ├── ProductCatalogApplication.java
-│   │   ├── controller/ProductController.java
-│   │   ├── service/ProductService.java
-│   │   └── model/Product.java
-│   └── README.md
-├── assignment-5-jpa/            # Persistence with JPA & H2
-│   ├── pom.xml
-│   ├── src/main/java/com/example/
-│   │   ├── repository/ProductRepository.java
-│   │   ├── service/ProductService.java
-│   │   └── model/Product.java
-│   └── README.md
-└── README.md                    # This file
-```
-
 ## Learning Progression
 
 ### 📚 Assignment 1: Basic Java Domain Model
@@ -83,6 +52,15 @@ product-catalog-service/
 
 **Technologies**: Spring Data JPA, H2 Database, Hibernate
 
+### 📚 Assignment 6: Advanced Persistence & Migrations
+**Goal**: Enhance the persistence layer with relationships, database versioning, and pagination.
+
+**Key Concepts**:
+- **Entity Relationships**: Implemented `@OneToMany` and `@ManyToOne` between Products and Reviews.
+- **Flyway Migrations**: Managed database schema versions using SQL scripts (`V1__init.sql`, `V2__reviews.sql`).
+- **Pagination**: Implemented server-side pagination using `Pageable` and `Page<T>`.
+- **Nested Validation**: Enabled deep validation of related objects using `@Valid`.
+
 ## Quick Start Guide
 
 ### Assignment 1-2: Basic Java
@@ -92,110 +70,20 @@ mvn compile
 mvn exec:java -Dexec.mainClass="com.example.Main"
 ```
 
-### Assignment 3 & 4: Spring Boot
+### Assignment 3-4: Spring Boot
 ```bash
 cd product-catalog-service
 mvn spring-boot:run
 ```
 
-### Assignment 5: JPA Persistence
+### Assignment 5: Basic JPA
 ```bash
 cd assignment-5-jpa
 mvn spring-boot:run
 ```
 
-Then test the endpoints:
-- `http://localhost:8080/` - Home page
-- `http://localhost:8080/products` - Get all products (JSON)
-- `http://localhost:8080/products/1` - Get product by ID
-- `http://localhost:8080/products/count` - Get product count
-
-## Key Features Demonstrated
-
-### Assignment 1-2 Features:
-- ✅ Lombok-generated getters/setters/constructors
-- ✅ Stream filtering: `getProductsAbovePrice()`
-- ✅ Stream mapping: `getAllProductNames()`
-- ✅ Stream chaining: filter + map operations
-- ✅ Optional null safety: `findProductById()`
-- ✅ Functional programming patterns
-
-### Assignment 3 Features:
-- ✅ Spring Boot auto-configuration
-- ✅ Constructor-based dependency injection
-- ✅ RESTful API endpoints
-- ✅ JSON response serialization
-- ✅ Service layer separation
-- ✅ Component scanning and bean management
-
-## Sample Output
-
-### Assignment 1-2 Console Output:
+### Assignment 6: Advanced JPA
+```bash
+cd assignment-6-persistence
+mvn spring-boot:run
 ```
-=== Assignment 1: Basic Product ===
-Product name: Laptop
-
-=== Assignment 2: ProductService Demo ===
-1. All Products:
-  Laptop - $999.99
-  Mouse - $25.5
-  ...
-
-2. Products above $100:
-  Laptop - $999.99
-  Monitor - $299.99
-  ...
-```
-
-### Assignment 3 API Response:
-```json
-GET /products
-[
-  {
-    "id": 1,
-    "name": "Spring Boot Laptop",
-    "price": 1299.99
-  },
-  {
-    "id": 2,
-    "name": "REST API Mouse", 
-    "price": 35.5
-  }
-]
-```
-
-## Dependencies Used
-
-### Core Dependencies:
-- **Java 21**: Modern Java features and performance
-- **Maven**: Build automation and dependency management
-- **Lombok 1.18.44**: Boilerplate code reduction
-
-### Spring Boot Dependencies:
-- **Spring Boot 3.2.0**: Framework and auto-configuration
-- **Spring Web**: REST API and web layer
-- **Embedded Tomcat**: Application server
-
-## Learning Outcomes
-
-By completing these assignments, you will understand:
-
-1. **Java Fundamentals**: Classes, objects, packages, and Maven
-2. **Modern Java**: Lombok annotations, Stream API, Optional
-3. **Functional Programming**: Lambda expressions, method references
-4. **Spring Framework**: Dependency injection, component scanning
-5. **REST APIs**: HTTP endpoints, JSON serialization, web services
-6. **Software Architecture**: Layered architecture (Controller → Service → Model)
-
-## Next Steps
-
-This project provides a solid foundation for:
-- Database integration with Spring Data JPA
-- Security implementation with Spring Security
-- Testing with JUnit and MockMvc
-- Containerization with Docker
-- Cloud deployment
-
----
-
-**Happy Learning!** 🚀 Each assignment builds upon the previous one, creating a comprehensive understanding of modern Java development.
