@@ -72,7 +72,7 @@ mvn exec:java -Dexec.mainClass="com.example.Main"
 
 ### Assignment 3-4: Spring Boot
 ```bash
-cd product-catalog-service
+cd assignment-3-4
 mvn spring-boot:run
 ```
 

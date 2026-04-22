@@ -5,7 +5,7 @@ A Spring Boot application with an enhanced persistence layer featuring entity re
 ## Project Structure
 
 ```
-product-catalog-service/
+assignment-6-persistence/
 ├── pom.xml
 ├── src/
 │   └── main/

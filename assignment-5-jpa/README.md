@@ -5,7 +5,7 @@ A Spring Boot application demonstrating database persistence using Spring Data J
 ## Project Structure
 
 ```
-product-catalog-service/
+assignment-5-jpa/
 ├── pom.xml
 ├── src/
 │   └── main/
@@ -50,14 +50,14 @@ mvn spring-boot:run
 
 ### Method 2: Compile and Run
 ```bash
-cd product-catalog-service
+cd assignment-3-4
 mvn compile
 mvn spring-boot:run
 ```
 
 ### Method 3: Package and Run JAR
 ```bash
-cd product-catalog-service
+cd assignment-3-4
 mvn package
 java -jar target/product-catalog-spring-1.0.0.jar
 ```

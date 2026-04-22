@@ -5,7 +5,7 @@ A Spring Boot REST API application demonstrating dependency injection, validatio
 ## Project Structure
 
 ```
-product-catalog-service/
+assignment-3-4/
 ├── pom.xml
 ├── src/
 │   └── main/
@@ -47,20 +47,20 @@ product-catalog-service/
 
 ### Method 1: Using Maven (Recommended)
 ```bash
-cd product-catalog-service
+cd assignment-3-4
 mvn spring-boot:run
 ```
 
 ### Method 2: Compile and Run
 ```bash
-cd product-catalog-service
+cd assignment-3-4
 mvn compile
 mvn spring-boot:run
 ```
 
 ### Method 3: Package and Run JAR
 ```bash
-cd product-catalog-service
+cd assignment-3-4
 mvn package
 java -jar target/product-catalog-spring-1.0.0.jar
 ```
