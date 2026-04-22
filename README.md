@@ -61,6 +61,17 @@
 - **Pagination**: Implemented server-side pagination using `Pageable` and `Page<T>`.
 - **Nested Validation**: Enabled deep validation of related objects using `@Valid`.
 
+### 📚 Assignment 7: Transaction Management & Rollback
+**Goal**: Implement transaction handling and verify atomic database operations.
+
+**Key Concepts Learned**:
+- **@Transactional**: Managing database transaction boundaries.
+- **Atomic Operations**: Ensuring multiple database saves succeed or fail as a single unit.
+- **Rollback Behavior**: Verifying that partial data is not saved when a RuntimeException occurs.
+- **Data Integrity**: Maintaining a clean database state during application failures.
+
+**Technologies**: Spring Transactions, Hibernate, H2 Database.
+
 ## Quick Start Guide
 
 ### Assignment 1-2: Basic Java
@@ -85,5 +96,11 @@ mvn spring-boot:run
 ### Assignment 6: Advanced JPA
 ```bash
 cd assignment-6-persistence
+mvn spring-boot:run
+```
+
+### Assignment 7: Transactions
+```bash
+cd assignment-7-transactions
 mvn spring-boot:run
 ```
