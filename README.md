@@ -72,6 +72,18 @@
 
 **Technologies**: Spring Transactions, Hibernate, H2 Database.
 
+### 📚 Assignment 8: Unit Testing with JUnit 5 & Mockito
+**Goal**: Implement isolated unit tests for business logic in the service layer.
+
+**Key Concepts Learned**:
+- **Mocking**: Using `@Mock` to isolate the service from the database.
+- **Dependency Injection for Tests**: Using `@InjectMocks` to wire mocks into the service.
+- **Stubbing**: Defining behavior for mocks with `when(...).thenReturn(...)`.
+- **Assertions**: Validating outcomes with `assertEquals()` and `assertThrows()`.
+- **Verifications**: Ensuring repository methods are called as expected with `verify()`.
+
+**Technologies**: JUnit 5, Mockito, Spring Boot Test Starter.
+
 ## Quick Start Guide
 
 ### Assignment 1-2: Basic Java
@@ -103,4 +115,10 @@ mvn spring-boot:run
 ```bash
 cd assignment-7-transactions
 mvn spring-boot:run
+```
+
+### Assignment 8: Unit Testing
+```bash
+cd assignment-8-junit
+mvn test
 ```
